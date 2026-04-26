@@ -1,0 +1,81 @@
+:root {
+    --bg-light: #E3F2FD; /* Light Blue Background */
+    --navy: #0D47A1;      /* Deep Professional Navy */
+    --orange: #FF9100;    /* Contrast Orange */
+    --white: #ffffff;
+    --text-dark: #263238;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+}
+
+/* Header */
+.main-header {
+    background: var(--navy);
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo { color: white; font-size: 1.5rem; font-weight: bold; }
+.logo span { color: var(--orange); }
+
+.nav-links a { color: white; margin: 0 15px; text-decoration: none; font-size: 0.9rem; }
+.nav-links a:hover { color: var(--orange); }
+
+/* Social Sidebar */
+.social-sidebar {
+    position: fixed;
+    left: 0;
+    top: 30%;
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+}
+
+.social-sidebar a {
+    padding: 12px;
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.wsp { background: #25D366; } .ln { background: #0077B5; } .ig { background: #E1306C; }
+.tt { background: #000; } .yt { background: #FF0000; } .x { background: #000; }
+
+/* Hero */
+.hero {
+    padding: 100px 10%;
+    background: linear-gradient(135deg, var(--white) 50%, var(--bg-light) 50%);
+}
+
+.badge { background: var(--navy); color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.8rem; }
+h1 { font-size: 3rem; color: var(--navy); margin: 20px 0; }
+
+.btn-main { background: var(--orange); border: none; padding: 12px 30px; color: white; font-weight: bold; border-radius: 5px; cursor: pointer; }
+.btn-outline { border: 2px solid var(--navy); background: transparent; padding: 12px 30px; margin-left: 10px; border-radius: 5px; cursor: pointer; }
+
+/* Tabs */
+.tabs-section { padding: 50px 10%; }
+.tab-header { display: flex; border-bottom: 2px solid #ccc; margin-bottom: 30px; }
+.tab-btn { background: none; border: none; padding: 15px 30px; cursor: pointer; font-size: 1.1rem; }
+.tab-btn.active { border-bottom: 4px solid var(--orange); color: var(--navy); font-weight: bold; }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+.card { background: white; padding: 15px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+.card img { width: 100%; border-radius: 8px; }
+
+/* Contact Box */
+.contact-area { background: var(--navy); padding: 60px 10%; color: white; }
+.contact-box { max-width: 600px; margin: 0 auto; }
+input, textarea { width: 100%; padding: 12px; margin: 10px 0; border-radius: 5px; border: none; }
+.btn-submit { background: var(--orange); width: 100%; padding: 15px; border: none; color: white; font-weight: bold; cursor: pointer; border-radius: 5px; }
